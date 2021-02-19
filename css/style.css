@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to top, violet, indigo, blue, green, yellow, orange, red);
+    background-repeat: no-repeat;
+    color: #dddddd;
+    user-select: none;
+}
+
+h1,
+#clearCanvas {
+    margin: 15px 0;
+}
+
+.shapes {
+    display: flex;
+    background: #ffffff;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
+    border-right: 2px solid #000000;
+}
+
+.shapes .shape {
+    position: relative;
+    padding: 8px 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.shapes .shape:hover {
+    background: #dddddd;
+}
+
+.shapes .shape div {
+    width: 15px;
+    height: 15px;
+    border: 1.5px solid #000000;
+}
+
+.shapes .shape .circle {
+    border-radius: 50%;
+}
+
+.shapes .shape .line{
+    height: 1.5px;
+    border: none;
+    background: #000000;
+    transform: translateY(5px) rotate(-45deg);
+}
+
+.shapes .shape.active {
+    background: #000000;
+}
+
+.shapes .shape.active div {
+    border-color: #ffffff;
+}
+
+.shapes .shape.active .line{
+    background: #ffffff;
+}
+
+canvas {
+    background: #ffffff;
+    border: 2px solid #000000;
+    cursor: crosshair;
+}
+
+#clearCanvas {
+    outline: none;
+    border: 2px solid #000000;
+    background: #dddddd;
+    color: #444444;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#clearCanvas:hover {
+    color: #000000;
+}

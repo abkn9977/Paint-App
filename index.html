@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple paint app</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Simple Paint App</h1>
+    <div class="shapes">
+        <div class="shape rect active" data-shape="rectangle">
+            <div class="rectangle"></div>
+        </div>
+        <div class="shape cir " data-shape="circle">
+            <div class="circle"></div>
+        </div>
+        <div class="shape line" data-shape="line">
+            <div class="line"></div>
+        </div>
+    </div>
+    <canvas id="paintArea">
+    </canvas>
+    <button id="clearCanvas">Clear Canvas</button>
+
+    <script src="js/paint.js"></script>
+</body>
+
+</html>
